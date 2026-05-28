@@ -13,9 +13,15 @@ class Database
 
             try {
                 self::$instance = new PDO($dsn, $config['user'], $config['pass'], [
-                    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+
+                    // Faz o PDO lançar exceções quando ocorrer erro no banco
+                    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+
+                    // Define o formato padrão dos resultados como array associativo
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                    PDO::ATTR_EMULATE_PREPARES   => false,
+
+                    // Desativa a emulação de prepared statements pelo PHP
+                    PDO::ATTR_EMULATE_PREPARES => false,
                 ]);
             } catch (PDOException $e) {
                 error_log('Erro na conexão com o banco: ' . $e->getMessage());
