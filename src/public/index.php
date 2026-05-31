@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/../config/bootstrap.php';
+require __DIR__ . '/../core/bootstrap.php';
 
 $router = require __DIR__ . '/../routes/pagesRoutes.php';
 
