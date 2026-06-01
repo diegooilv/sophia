@@ -23,3 +23,4 @@ require __DIR__ . '/../controller/PagesController.php';
 // Layouts
 include __DIR__ . '/../views/layouts/header.php';
 include __DIR__ . '/../views/layouts/footer.php';
+include __DIR__ . '/../views/layouts/post.php';

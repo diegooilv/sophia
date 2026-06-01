@@ -1,0 +1,141 @@
+.post {
+    background: var(--surface);
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 32px auto;
+    max-width: 900px;
+    border: 1px solid rgba(213, 162, 93, 0.15);
+    transition: transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.post:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+}
+
+.post-wrapper {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.post-wrapper:hover .post-title {
+    color: var(--accent);
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post-title {
+    font-family: var(--font-title);
+    margin: 0 0 8px;
+}
+
+.post-banner {
+    display: block;
+    max-width: min(100%, 900px);
+    width: auto;
+    height: auto;
+    margin: 8px auto 12px;
+    border-radius: 12px;
+}
+
+.post-description {
+    font-family: var(--font-body);
+    opacity: 0.9;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.post-links {
+    margin-top: 1px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.post-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+.post-author {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post-author-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-author-name {
+    font-size: 15px;
+}
+
+.post-btn-report {
+    display: inline-block;
+    margin-top: 16px;
+    color: #ff6b6b;
+    text-decoration: none;
+    font-size: 14px;
+    transition: opacity .2s ease;
+}
+
+.post-btn-report:hover {
+    opacity: .8;
+}
+
+.post-author-link {
+    color: var(--text);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.post-author-link:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+
+    .post {
+        margin: 16px;
+        border-radius: 12px;
+    }
+
+    .post-content {
+        padding: 16px;
+    }
+
+    .post-banner {
+        width: 100%;
+    }
+
+    .post-title {
+        font-size: 1.5rem;
+    }
+
+    .post-description {
+        font-size: .95rem;
+        max-width: 75ch;
+        margin: 0 auto;
+    }
+
+    .post-author-img {
+        width: 36px;
+        height: 36px;
+    }
+}
