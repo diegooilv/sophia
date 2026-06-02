@@ -25,7 +25,7 @@
 }
 
 .post-content {
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 .post-title {
@@ -78,15 +78,21 @@
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
+	transition: 1.2s;
+}
+
+.post-author-img:hover {
+	transform: rotate(360deg) scale(1.08);
 }
 
 .post-author-name {
     font-size: 15px;
+	transition: 0.3s;
 }
 
 .post-btn-report {
     display: inline-block;
-    margin-top: 16px;
+    margin: 16px 0;
     color: #ff6b6b;
     text-decoration: none;
     font-size: 14px;
@@ -95,6 +101,7 @@
 
 .post-btn-report:hover {
     opacity: .8;
+	transform: scale(1.1);
 }
 
 .post-author-link {
@@ -109,6 +116,10 @@
     opacity: 0.8;
 }
 
+.post-author-name:hover {
+	color: #E8C48C;
+}
+
 @media (max-width: 768px) {
 
     .post {
@@ -117,7 +128,7 @@
     }
 
     .post-content {
-        padding: 16px;
+        padding: 16px 16px 0px 16px;
     }
 
     .post-banner {
