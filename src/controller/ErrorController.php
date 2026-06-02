@@ -1,14 +1,17 @@
 <?php
-class ErrorController
+class ErrorController extends Controller
 {
+
+    private ErrorService $errorService;
+
+    public function __construct()
+    {
+        $this->errorService = new ErrorService();
+    }
     public function notFound()
     {
-        $navItems = [
-            'Início' => '/',
-            'Sobre' => '/sobre',
-            'Entrar' => '/entrar',
-        ];
+        $navItems = $this->errorService->getHeaderItems();
 
-        require __DIR__ . '/../views/404.php';
+        $this->view('404', compact('navItems'));
     }
 }
