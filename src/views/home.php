@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <title>Tela Inicial</title>
+    <title>Sophia</title>
 </head>
 
 <body>
     <?= renderHeader($navItems) ?>
 
     <?php foreach ($posts as $post): ?>
-            <?= post($post) ?>
+        <?= renderPost($post) ?>
     <?php endforeach; ?>
 
-    <?= footer() ?>
+    <?php foreach ($materials as $material): ?>
+        <?= renderMaterial($material) ?>
+    <?php endforeach; ?>
 
+    <?= renderFooter() ?>
 </body>
 
 </html>

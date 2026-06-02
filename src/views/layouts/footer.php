@@ -1,6 +1,6 @@
 <?php
 
-function footer()
+function renderFooter()
 {
     return <<<HTML
 <footer class="footer">
