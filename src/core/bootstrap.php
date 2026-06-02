@@ -23,11 +23,12 @@ require_once __DIR__ . '/../viewmodels/MaterialViewModel.php';
 
 
 // Controller
-require_once __DIR__ . '/../controller/PagesController.php';
+require_once __DIR__ . '/../controller/HomeController.php';
 require_once __DIR__ . '/../controller/ErrorController.php';
 
 // Services
 require_once __DIR__ . '/../service/ErrorService.php';
+require_once __DIR__ . '/../service/HomeService.php';
 
 // Layouts
 require_once __DIR__ . '/../views/layouts/header.php';

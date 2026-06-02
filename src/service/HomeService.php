@@ -1,16 +1,8 @@
 <?php
-
-class PagesController extends Controller
+class HomeService
 {
-
-    public function index()
+    public function getPosts()
     {
-        $navItems = [
-            'Início' => '/',
-            'Sobre' => '/sobre',
-            'Entrar' => '/entrar',
-        ];
-
         $user = new UserModel(
             1,
             "Diego",
@@ -34,6 +26,21 @@ class PagesController extends Controller
 
         $posts = [];
         $posts[] = new PostViewModel($post, $user);
+        return $posts;
+    }
+
+    public function getMaterials()
+    {
+        $user = new UserModel(
+            1,
+            "Diego",
+            "diegooilv",
+            "diego@sophia.com",
+            "password",
+            "oioi",
+            "/assets/users/diego.png",
+            "admin"
+        );
 
         $material = new MaterialModel(
             1,
@@ -56,8 +63,18 @@ class PagesController extends Controller
                     "https://example.com/nietzsche.pdf"
                 ),
                 $user
-            )];
+            )
+        ];
 
-        $this->view('home', compact('navItems', 'user', 'posts', 'materials'));
+        return $materials;
+    }
+
+    public function getHeaderItems()
+    {
+        return [
+            'Início' => '/',
+            'Sobre' => '/sobre',
+            'Entrar' => '/entrar',
+        ];
     }
 }

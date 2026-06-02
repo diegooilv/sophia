@@ -1,6 +1,6 @@
 <?php
 
 $router = new Router();
-$router->get('/', [PagesController::class, 'index']);
+$router->get('/', [HomeController::class, 'index']);
 
 return $router;
