@@ -1,7 +1,10 @@
 <?php
 
-function post($post)
+function renderPost($postView)
 {
+    $post = $postView->getPost();
+    $author = $postView->getAuthor();
+
     $linksHtml = "";
 
     foreach ($post->getLinks() as $link) {
@@ -28,6 +31,7 @@ function post($post)
                 </p>
 
             </div>
+
         </a>
 
         <div class='post-content'>
@@ -36,16 +40,19 @@ function post($post)
                 {$linksHtml}
             </div>
 
-           <div class='post-author'>
+            <div class='post-author'>
 
                 <img
                     class='post-author-img'
-                    src='{$post->getImageUserUrl()}'
-                    alt='{$post->getAuthorName()}'
+                    src='{$author->getImageUrl()}'
+                    alt='{$author->getUsername()}'
                 >
 
-                <a href='/user/{$post->getUserId()}' class='post-author-name'>
-                    {$post->getAuthorName()}
+                <a
+                    href='/user/{$author->getId()}'
+                    class='post-author-name'
+                >
+                    {$author->getUsername()}
                 </a>
 
             </div>
