@@ -3,7 +3,7 @@
 class PagesController extends Controller
 {
 
-    public static function index()
+    public function index()
     {
         $navItems = [
             'Início' => '/',
@@ -58,6 +58,6 @@ class PagesController extends Controller
                 $user
             )];
 
-        include __DIR__ . '/../views/home.php';
+        $this->view('home', compact('navItems', 'user', 'posts', 'materials'));
     }
 }
