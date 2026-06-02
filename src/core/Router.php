@@ -60,6 +60,7 @@ class Router
         }
 
         http_response_code(404);
-        include __DIR__ . '/../views/404.php';
+        (new ErrorController())->notFound();
+        exit;
     }
 }

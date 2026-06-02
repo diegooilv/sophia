@@ -24,6 +24,7 @@ require_once __DIR__ . '/../viewmodels/MaterialViewModel.php';
 
 // Controller
 require_once __DIR__ . '/../controller/PagesController.php';
+require_once __DIR__ . '/../controller/ErrorController.php';
 
 // Layouts
 require_once __DIR__ . '/../views/layouts/header.php';
