@@ -1,6 +1,7 @@
 @import url("./modules/header.css");
 @import url("./modules/footer.css");
 @import url("./modules/post.css");
+@import url("./modules//material.css");
 
 @font-face {
     font-family: "Cinzel";
