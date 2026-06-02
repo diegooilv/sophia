@@ -11,13 +11,15 @@
 <body>
     <?= renderHeader($navItems) ?>
 
-    <?php foreach ($posts as $post): ?>
-        <?= renderPost($post) ?>
-    <?php endforeach; ?>
+    <main>
+        <?php foreach ($posts as $post): ?>
+            <?= renderPost($post) ?>
+        <?php endforeach; ?>
 
-    <?php foreach ($materials as $material): ?>
-        <?= renderMaterial($material) ?>
-    <?php endforeach; ?>
+        <?php foreach ($materials as $material): ?>
+            <?= renderMaterial($material) ?>
+        <?php endforeach; ?>
+    </main>
 
     <?= renderFooter() ?>
 </body>
