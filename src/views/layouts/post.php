@@ -59,7 +59,7 @@ function renderPost($postView)
 
             <a
                 class='post-btn-report'
-                href='/report/{$post->getId()}'
+                href='/report/post/{$post->getId()}'
             >
                 Report
             </a>
