@@ -1,7 +1,11 @@
 <?php
 
+// Vendor
+require_once __DIR__ . '/../vendor/autoload.php';
+
 // Config
 require_once __DIR__ . '/../config/database.php';
+require_once __DIR__ . '/../config/mail.php';
 
 // Core
 require_once __DIR__ . '/../core/Database.php';
@@ -31,6 +35,7 @@ require_once __DIR__ . '/../controller/ReportController.php';
 require_once __DIR__ . '/../service/ErrorService.php';
 require_once __DIR__ . '/../service/HomeService.php';
 require_once __DIR__ . '/../service/ReportService.php';
+require_once __DIR__ . '/../service/MailService.php';
 
 // Layouts
 require_once __DIR__ . '/../views/layouts/header.php';

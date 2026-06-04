@@ -11,8 +11,10 @@ RUN a2enmod rewrite
 RUN a2enmod headers
 
 COPY docker/apache.conf /etc/apache2/sites-available/000-default.conf
-COPY src/ /var/www/html/
 
-RUN cd /var/www/html && composer require phpmailer/phpmailer
+COPY src/composer.json src/composer.lock* /var/www/html/
+RUN cd /var/www/html && composer install --no-dev --optimize-autoloader
+
+COPY src/ /var/www/html/
 
 RUN chown -R www-data:www-data /var/www/html
