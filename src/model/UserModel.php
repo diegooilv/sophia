@@ -4,61 +4,121 @@
 
 class UserModel
 {
-    public function __construct(
-        private $id,
-        private $name,
-        private $username,
-        private $email,
-        private $passwordHash,
-        private $bio,
-        private $imageUrl,
-        private $role,
-        private $active = true,
-    ) {
+    private $pdo;
+    public function __construct()
+    {
+        $this->pdo = Database::connect();
     }
 
-    public function getId()
+    public function create($name, $username, $email, $password_hash, $bio, $image_url)
     {
-        return $this->id;
+        $stmt = $this->pdo->prepare(
+            'INSERT INTO users (name, username, email, password_hash, bio, image_url) VALUES (?,?,?,?,?,?)'
+        );
+
+        $stmt->execute([
+            $name,
+            $username,
+            $email,
+            $password_hash,
+            $bio,
+            $image_url
+        ]);
+
+        return $this->pdo->lastInsertId();
     }
 
-    public function getName()
+    public function findByEmail($email)
     {
-        return $this->name;
+        $stmt = $this->pdo->prepare(
+            'SELECT * FROM User WHERE email = ?'
+        );
+
+        $stmt->execute([$email]);
+
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function getUsername()
+    public function findByUsername($username)
     {
-        return $this->username;
+        $stmt = $this->pdo->prepare(
+            'SELECT * FROM User WHERE username = ?'
+        );
+
+        $stmt->execute([$username]);
+
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function getEmail()
+    public function findById($id)
     {
-        return $this->email;
+        $stmt = $this->pdo->prepare(
+            'SELECT * FROM User WHERE id = ?'
+        );
+
+        $stmt->execute([$id]);
+
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function getPasswordHash()
+    public function update($id, $data)
     {
-        return $this->passwordHash;
+        $fields = [];
+        $values = [];
+
+        foreach ($data as $column => $value) {
+            $fields[] = "{$column} = ?";
+            $values[] = $value;
+        }
+
+        $values[] = $id;
+
+        $sql = "UPDATE User SET " . implode(', ', $fields) . " WHERE id = ?";
+
+        $stmt = $this->pdo->prepare($sql);
+
+        return $stmt->execute($values);
     }
 
-    public function getBio()
+    public function delete($id)
     {
-        return $this->bio;
+        $stmt = $this->pdo->prepare('DELETE FROM users WHERE id = ?');
+        $stmt->execute([$id]);
+        return $stmt->rowCount() > 0;
     }
 
-    public function getImageUrl()
+    public function toggleActive($id, $active)
     {
-        return $this->imageUrl;
+        if ($active) {
+            $stmt = $this->pdo->prepare(
+                'UPDATE User
+             SET active = ?, deleted_at = NULL
+             WHERE id = ?'
+            );
+
+            $stmt->execute([true, $id]);
+        } else {
+            $stmt = $this->pdo->prepare(
+                'UPDATE User
+             SET active = ?, deleted_at = NOW()
+             WHERE id = ?'
+            );
+
+            $stmt->execute([false, $id]);
+        }
+
+        return $stmt->rowCount() > 0;
     }
 
-    public function getRole()
+    public function toggleAdm($id, $boolean)
     {
-        return $this->role;
-    }
+        $stmt = $this->pdo->prepare('UPDATE User SET role = ? WHERE id = ?');
+        if ($boolean) {
+            $stmt->execute(['admin', $id]);
+        } else {
+            $stmt->execute(['user', $id]);
+        }
 
-    public function isActive()
-    {
-        return $this->active;
+        return $stmt->rowCount() > 0;
     }
 }
