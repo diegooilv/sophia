@@ -20,6 +20,22 @@
     gap: .4rem;
 }
 
+.signup__image-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.signup__preview {
+    display: none;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    flex-shrink: 0;
+}
+
 .signup__field label {
     font-family: var(--font-alt);
     font-size: .85rem;
@@ -112,6 +128,7 @@
     background: var(--accent-hover);
     border-color: var(--accent-hover);
 }
+
 
 .signup>p {
     text-align: center;

@@ -40,7 +40,11 @@
 
             <div class="signup__field">
                 <label for="image">Foto de perfil</label>
-                <input type="file" id="image" name="image" accept="image/jpeg,image/png,image/webp" />
+
+                <div class="signup__image-wrapper">
+                    <input type="file" id="image" name="image" accept="image/jpeg,image/png,image/webp">
+                    <img class="signup__preview" id="preview" src="" alt="Prévia">
+                </div>
             </div>
 
             <button type="submit">Criar conta</button>
@@ -52,3 +56,5 @@
     </main>
     <?= renderFooter() ?>
 </body>
+
+<script type="module" src="/assets/js/signup.js"></script>
