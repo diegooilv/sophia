@@ -1,15 +1,6 @@
 <?php
-class HomeService
+class SignupService
 {
-    public function getPosts()
-    {
-    }
-
-    public function getMaterials()
-    {
-    
-    }
-
     public function getHeaderItems()
     {
         return [
