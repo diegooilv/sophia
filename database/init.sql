@@ -11,58 +11,58 @@ USE sophia;
 -- Tables
 -- --------------------------------------------------------
 CREATE TABLE
-    User (
+    users (
         id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         name VARCHAR(100) NOT NULL,
         username VARCHAR(50) NOT NULL UNIQUE,
         email VARCHAR(150) NOT NULL UNIQUE,
         password_hash VARCHAR(255) NOT NULL,
         bio TEXT,
-        avatar VARCHAR(500),
+        image_url VARCHAR(500),
         role ENUM ('user', 'admin') NOT NULL DEFAULT 'user',
         active BOOLEAN NOT NULL DEFAULT TRUE,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        deleted_at DATETIME DEFAULT NULL
+        disabled_at DATETIME DEFAULT NULL
     );
 
 CREATE TABLE
-    SessionToken (
+    session_tokens (
         id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         user_id INT UNSIGNED NOT NULL,
         token VARCHAR(255) NOT NULL,
         expires_at TIMESTAMP NOT NULL,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        FOREIGN KEY (user_id) REFERENCES User (id) ON DELETE CASCADE
+        CONSTRAINT fk_session_tokens_user FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
     );
 
 CREATE TABLE
-    ResetToken (
+    reset_tokens (
         id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         user_id INT UNSIGNED NOT NULL,
         token VARCHAR(255) NOT NULL,
         expires_at TIMESTAMP NOT NULL,
         used BOOLEAN NOT NULL DEFAULT FALSE,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        FOREIGN KEY (user_id) REFERENCES User (id) ON DELETE CASCADE
+        CONSTRAINT fk_reset_tokens_user FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
     );
 
 CREATE TABLE
-    Category (
+    categories (
         id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         name VARCHAR(100) NOT NULL UNIQUE
     );
 
 CREATE TABLE
-    Preference (
+    preferences (
         user_id INT UNSIGNED NOT NULL,
         category_id INT UNSIGNED NOT NULL,
         PRIMARY KEY (user_id, category_id),
-        FOREIGN KEY (user_id) REFERENCES User (id) ON DELETE CASCADE,
-        FOREIGN KEY (category_id) REFERENCES Category (id) ON DELETE CASCADE
+        CONSTRAINT fk_preferences_user FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE,
+        CONSTRAINT fk_preferences_category FOREIGN KEY (category_id) REFERENCES categories (id) ON DELETE CASCADE
     );
 
 CREATE TABLE
-    Post (
+    posts (
         id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         title VARCHAR(255) NOT NULL,
         body TEXT NOT NULL,
@@ -74,12 +74,12 @@ CREATE TABLE
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
         deleted_at DATETIME DEFAULT NULL,
-        FOREIGN KEY (author_id) REFERENCES User (id) ON DELETE CASCADE,
-        FOREIGN KEY (category_id) REFERENCES Category (id) ON DELETE RESTRICT
+        CONSTRAINT fk_posts_author FOREIGN KEY (author_id) REFERENCES users (id) ON DELETE CASCADE,
+        CONSTRAINT fk_posts_category FOREIGN KEY (category_id) REFERENCES categories (id) ON DELETE RESTRICT
     );
 
 CREATE TABLE
-    Material (
+    materials (
         id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         title VARCHAR(255) NOT NULL,
         description TEXT,
@@ -89,15 +89,14 @@ CREATE TABLE
         author_id INT UNSIGNED NOT NULL,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         deleted_at DATETIME DEFAULT NULL,
-        FOREIGN KEY (author_id) REFERENCES User (id) ON DELETE CASCADE
+        CONSTRAINT fk_materials_author FOREIGN KEY (author_id) REFERENCES users (id) ON DELETE CASCADE
     );
 
 -- --------------------------------------------------------
 -- Seed – Admin
 -- --------------------------------------------------------
--- password: admin1234 (bcrypt) 
 INSERT INTO
-    User (name, username, email, password_hash, role)
+    users (name, username, email, password_hash, role)
 VALUES
     (
         'Diego',
@@ -107,4 +106,4 @@ VALUES
         'admin'
     );
 
--- Será alterado no futuro.
+--- Vai ser alterado futuramente.
