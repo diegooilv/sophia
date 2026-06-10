@@ -1,21 +1,12 @@
 <?php
-class HomeService
+class LoginService
 {
-    public function getPosts()
-    {
-    }
-
-    public function getMaterials()
-    {
-    
-    }
-
     public function getHeaderItems()
     {
         return [
             'Início' => '/',
             'Sobre' => '/about',
-            'Entrar' => '/login',
+            'Criar Conta' => '/signup',
         ];
     }
 }

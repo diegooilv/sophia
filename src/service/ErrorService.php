@@ -5,8 +5,8 @@ class ErrorService
     {
         return [
             'Início' => '/',
-            'Sobre' => '/sobre',
-            'Entrar' => '/entrar',
+            'Sobre' => '/about',
+            'Entrar' => '/login',
         ];
     }
 }
