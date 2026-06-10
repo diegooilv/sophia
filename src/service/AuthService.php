@@ -31,21 +31,23 @@ class AuthService
     }
     public function login($email, $password)
     {
-        try {
-            $user = $this->userModel->findByEmail($email);
-        } catch (PDOException $e) {
-            return false;
-        }
+        $email = trim(strtolower($email));
+
+        $user = $this->userModel->findByEmail($email);
+
+        var_dump($user);
+        var_dump($password);
+
         if (!$user) {
-            return false;
+            die("USER NOT FOUND");
         }
 
         if (!password_verify($password, $user['password_hash'])) {
-            return false;
+            die("PASSWORD WRONG");
         }
 
         if (!$user['active']) {
-            return false;
+            die("USER INACTIVE");
         }
 
         $_SESSION['auth'] = [
