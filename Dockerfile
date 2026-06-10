@@ -13,7 +13,11 @@ RUN a2enmod headers
 COPY docker/apache.conf /etc/apache2/sites-available/000-default.conf
 
 COPY src/composer.json src/composer.lock* /var/www/html/
+
 RUN cd /var/www/html && composer install --no-dev --optimize-autoloader
+
+RUN pecl install redis \
+    && docker-php-ext-enable redis
 
 COPY src/ /var/www/html/
 

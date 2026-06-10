@@ -30,6 +30,8 @@ services:
       CLOUDINARY_CLOUD_NAME: ${CLOUDINARY_CLOUD_NAME}
       CLOUDINARY_API_KEY: ${CLOUDINARY_API_KEY}
       CLOUDINARY_API_SECRET: ${CLOUDINARY_API_SECRET}
+      CAPTCHA_SECRET: ${CAPTCHA_SECRET}
+      GROQ_API_KEY: ${GROQ_API_KEY}
 
   db:
     image: mysql:8.0
@@ -75,6 +77,11 @@ services:
       - ./docker/.htpasswd:/etc/nginx/.htpasswd
     depends_on:
       - phpmyadmin
+  redis:
+    container_name: sophia_redis
+    image: redis:8.8-alpine
+    ports:
+      - "6379:6379"
 
 volumes:
   sophia_db:
