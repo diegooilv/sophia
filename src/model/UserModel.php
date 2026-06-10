@@ -1,10 +1,9 @@
 <?php
-// name, username, email, password_hash, bio, image_url,
-// role, active
 
 class UserModel
 {
     private $pdo;
+
     public function __construct()
     {
         $this->pdo = Database::connect();
@@ -13,9 +12,10 @@ class UserModel
     public function create($name, $username, $email, $password_hash, $bio, $image_url)
     {
         $stmt = $this->pdo->prepare(
-            'INSERT INTO users (name, username, email, password_hash, bio, image_url) VALUES (?,?,?,?,?,?)'
+            'INSERT INTO users (name, username, email, password_hash, bio, image_url)
+             VALUES (?,?,?,?,?,?)'
         );
-
+        $email = trim(strtolower($email));
         $stmt->execute([
             $name,
             $username,
@@ -30,8 +30,9 @@ class UserModel
 
     public function findByEmail($email)
     {
+        $email = trim(strtolower($email));
         $stmt = $this->pdo->prepare(
-            'SELECT * FROM User WHERE email = ?'
+            'SELECT * FROM users WHERE email = ?'
         );
 
         $stmt->execute([$email]);
@@ -42,7 +43,7 @@ class UserModel
     public function findByUsername($username)
     {
         $stmt = $this->pdo->prepare(
-            'SELECT * FROM User WHERE username = ?'
+            'SELECT * FROM users WHERE username = ?'
         );
 
         $stmt->execute([$username]);
@@ -53,7 +54,7 @@ class UserModel
     public function findById($id)
     {
         $stmt = $this->pdo->prepare(
-            'SELECT * FROM User WHERE id = ?'
+            'SELECT * FROM users WHERE id = ?'
         );
 
         $stmt->execute([$id]);
@@ -73,7 +74,7 @@ class UserModel
 
         $values[] = $id;
 
-        $sql = "UPDATE User SET " . implode(', ', $fields) . " WHERE id = ?";
+        $sql = "UPDATE users SET " . implode(', ', $fields) . " WHERE id = ?";
 
         $stmt = $this->pdo->prepare($sql);
 
@@ -84,6 +85,7 @@ class UserModel
     {
         $stmt = $this->pdo->prepare('DELETE FROM users WHERE id = ?');
         $stmt->execute([$id]);
+
         return $stmt->rowCount() > 0;
     }
 
@@ -91,20 +93,20 @@ class UserModel
     {
         if ($active) {
             $stmt = $this->pdo->prepare(
-                'UPDATE User
-             SET active = ?, deleted_at = NULL
-             WHERE id = ?'
+                'UPDATE users
+                 SET active = ?, deleted_at = NULL
+                 WHERE id = ?'
             );
 
-            $stmt->execute([true, $id]);
+            $stmt->execute([1, $id]);
         } else {
             $stmt = $this->pdo->prepare(
-                'UPDATE User
-             SET active = ?, deleted_at = NOW()
-             WHERE id = ?'
+                'UPDATE users
+                 SET active = ?, disabled_at = NOW()
+                 WHERE id = ?'
             );
 
-            $stmt->execute([false, $id]);
+            $stmt->execute([0, $id]);
         }
 
         return $stmt->rowCount() > 0;
@@ -112,7 +114,8 @@ class UserModel
 
     public function toggleAdm($id, $boolean)
     {
-        $stmt = $this->pdo->prepare('UPDATE User SET role = ? WHERE id = ?');
+        $stmt = $this->pdo->prepare('UPDATE users SET role = ? WHERE id = ?');
+
         if ($boolean) {
             $stmt->execute(['admin', $id]);
         } else {
