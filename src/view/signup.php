@@ -3,13 +3,19 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel='stylesheet' href='/assets/css/style.css'>
     <title>Sophia - Criar Conta</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        window.enableSubmit = () => document.getElementById("loginBtn").disabled = false;
+        window.disableSubmit = () => document.getElementById("loginBtn").disabled = true;
+    </script>
 </head>
 
 <body>
     <?= renderHeader($navItems) ?>
     <main class="signup">
         <h2>Cadastro</h2>
-        <form class="signup__form" action="/signup" method="POST" enctype="multipart/form-data" novalidate>
+        <form id="signupForm" class="signup__form" action="/signup" method="POST" enctype="multipart/form-data"
+            novalidate>
 
             <div class="signup__field">
                 <label for="name">Nome</label>
@@ -40,21 +46,19 @@
 
             <div class="signup__field">
                 <label for="image">Foto de perfil</label>
-
                 <div class="signup__image-wrapper">
                     <input type="file" id="image" name="image" accept="image/jpeg,image/png,image/webp">
                     <img class="signup__preview" id="preview" src="" alt="Prévia">
                 </div>
             </div>
 
-            <button type="submit">Criar conta</button>
+            <div class="g-recaptcha" data-sitekey="6LfU5g4tAAAAADP7cLanpolGa_LrsseTc6Cy6yhz"
+                data-callback="enableSubmit" data-expired-callback="disableSubmit"></div>
 
+            <button type="submit" id="loginBtn" disabled>Criar conta</button>
         </form>
-
         <p>Já tem uma conta? <a href="/login">Entrar</a></p>
-
     </main>
     <?= renderFooter() ?>
 </body>
-
 <script type="module" src="/assets/js/signup.js"></script>
