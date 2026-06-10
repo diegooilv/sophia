@@ -1,0 +1,36 @@
+<?php
+
+class RecaptchaService
+{
+    private string $secret;
+
+    public function __construct()
+    {
+        $this->secret = require __DIR__ . '/../config/recaptcha.php';
+    }
+
+    public function verify(string $token): bool
+    {
+        $ch = curl_init('https://www.google.com/recaptcha/api/siteverify');
+
+        curl_setopt_array($ch, [
+            CURLOPT_POST => true,
+            CURLOPT_POSTFIELDS => http_build_query([
+                'secret' => $this->secret,
+                'response' => $token,
+            ]),
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_TIMEOUT => 10,
+        ]);
+
+        $response = curl_exec($ch);
+
+        if ($response === false) {
+            return false;
+        }
+
+        $data = json_decode($response, true);
+
+        return $data['success'] ?? false;
+    }
+}
