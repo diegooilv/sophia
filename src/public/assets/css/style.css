@@ -5,6 +5,9 @@
 @import url("./modules/404.css");
 @import url("./modules/report.css");
 @import url("./modules/signup.css");
+@import url("./modules/login.css");
+@import url("./modules/about.css");
+@import url("./modules/ia.css");
 
 @font-face {
     font-family: "Cinzel";

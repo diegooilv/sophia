@@ -31,6 +31,10 @@ require_once __DIR__ . '/../controller/HomeController.php';
 require_once __DIR__ . '/../controller/ErrorController.php';
 require_once __DIR__ . '/../controller/ReportController.php';
 require_once __DIR__ . '/../controller/SignupController.php';
+require_once __DIR__ . '/../controller/LoginController.php';
+require_once __DIR__ . '/../controller/AboutController.php';
+require_once __DIR__ . '/../controller/ChatBotController.php';
+
 
 // Services
 require_once __DIR__ . '/../service/ErrorService.php';
@@ -40,9 +44,13 @@ require_once __DIR__ . '/../service/MailService.php';
 require_once __DIR__ . '/../service/AuthService.php';
 require_once __DIR__ . '/../service/SignupService.php';
 require_once __DIR__ . '/../service/CloudinaryService.php';
+require_once __DIR__ . '/../service/LoginService.php';
+require_once __DIR__ . '/../service/RecaptchaService.php';
+require_once __DIR__ . '/../service/GroqService.php';
+require_once __DIR__ . '/../service/RedisService.php';
 
 // Layouts
-require_once __DIR__ . '/../views/layouts/header.php';
-require_once __DIR__ . '/../views/layouts/footer.php';
-require_once __DIR__ . '/../views/layouts/post.php';
-require_once __DIR__ . '/../views/layouts/material.php';
+require_once __DIR__ . '/../view/layouts/header.php';
+require_once __DIR__ . '/../view/layouts/footer.php';
+require_once __DIR__ . '/../view/layouts/post.php';
+require_once __DIR__ . '/../view/layouts/material.php';
