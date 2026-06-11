@@ -16,6 +16,7 @@ class LoginController extends Controller
 
     public function loginForm()
     {
+        CsrfService::check();
         if (empty($_POST['email']) || empty($_POST['password'])) {
             return;
         }

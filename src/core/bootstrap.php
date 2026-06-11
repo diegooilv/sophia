@@ -48,6 +48,7 @@ require_once __DIR__ . '/../service/LoginService.php';
 require_once __DIR__ . '/../service/RecaptchaService.php';
 require_once __DIR__ . '/../service/GroqService.php';
 require_once __DIR__ . '/../service/RedisService.php';
+require_once __DIR__ . '/../service/CsrfService.php';
 
 // Layouts
 require_once __DIR__ . '/../view/layouts/header.php';

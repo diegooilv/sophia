@@ -16,6 +16,7 @@
         <h2>Cadastro</h2>
         <form id="signupForm" class="signup__form" action="/signup" method="POST" enctype="multipart/form-data"
             novalidate>
+            <input type="hidden" name="csrf" value="<?= CsrfService::token() ?>">
 
             <div class="signup__field">
                 <label for="name">Nome</label>

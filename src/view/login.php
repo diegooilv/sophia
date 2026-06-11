@@ -15,6 +15,7 @@
     <main class="login">
         <h2>Entrar</h2>
         <form class="login__form" action="/login" method="POST" enctype="multipart/form-data" novalidate>
+            <input type="hidden" name="csrf" value="<?= CsrfService::token() ?>">
 
             <div class="login__field">
                 <label for="email">E-mail</label>

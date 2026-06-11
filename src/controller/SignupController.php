@@ -14,6 +14,7 @@ class SignupController extends Controller
     }
     public function signupForm()
     {
+        CsrfService::check();
         $name = $_POST['name'] ?? '';
         $username = $_POST['username'] ?? '';
         $email = $_POST['email'] ?? '';
