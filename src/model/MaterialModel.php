@@ -1,46 +1,126 @@
 <?php
 // title, type, author_id
-// description, image, url
+// description, image, ur
+// category_id
 
 class MaterialModel
 {
-    public function __construct(
-        private $id,
-        private $title,
-        private $author_id,
-        private $description,
-        private $imageUrl,
-        private $url
-    ) {
+    private $pdo;
+    public function __construct()
+    {
+        $this->pdo = Database::connect();
     }
 
-    public function getId()
+    public function create($title, $description, $imageUrl, $type, $url, $authorId, $categoryId = 1)
     {
-        return $this->id;
+        $stmt = $this->pdo->prepare(
+            'INSERT INTO materials (title, description, image, type, url, author_id, category_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?)'
+        );
+
+        $stmt->execute([
+            $title,
+            $description,
+            $imageUrl,
+            $type,
+            $url,
+            $authorId,
+            $categoryId
+        ]);
+
+        return $this->pdo->lastInsertId();
     }
 
-    public function getTitle()
+    public function findByAuthor($authorId)
     {
-        return $this->title;
+        $stmt = $this->pdo->prepare(
+            'SELECT * FROM materials WHERE author_id = ?'
+        );
+        $stmt->execute([
+            $authorId
+        ]);
+
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function getAuthorId()
+    public function findById($id)
     {
-        return $this->author_id;
+        $stmt = $this->pdo->prepare(
+            'SELECT * FROM materials WHERE id = ?'
+        );
+        $stmt->execute([
+            $id
+        ]);
+
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function getDescription()
+    public function findByType($type)
     {
-        return $this->description;
+        $stmt = $this->pdo->prepare(
+            'SELECT * FROM materials WHERE type = ?'
+        );
+        $stmt->execute([
+            $type
+        ]);
+
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function getImageUrl()
+    public function search($query)
     {
-        return $this->imageUrl;
+        $search = "%{$query}%";
+
+        $stmt = $this->pdo->prepare(
+            'SELECT *
+         FROM materials
+         WHERE title LIKE ?
+            OR description LIKE ?'
+        );
+
+        $stmt->execute([
+            $search,
+            $search
+        ]);
+
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function getUrl()
+    public function edit($id, array $data)
     {
-        return $this->url;
+        $allowed = [
+            'title',
+            'description',
+            'image',
+            'url',
+            'category_id'
+        ];
+
+        $fields = [];
+        $values = [];
+
+        foreach ($data as $column => $value) {
+            if (!in_array($column, $allowed, true)) {
+                continue;
+            }
+
+            $fields[] = "{$column} = ?";
+            $values[] = $value;
+        }
+
+        if (empty($fields)) {
+            return false;
+        }
+
+        $values[] = $id;
+
+        $sql = sprintf(
+            'UPDATE materials SET %s WHERE id = ?',
+            implode(', ', $fields)
+        );
+
+        $stmt = $this->pdo->prepare($sql);
+
+        return $stmt->execute($values);
     }
 }

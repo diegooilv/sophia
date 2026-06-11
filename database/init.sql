@@ -87,6 +87,7 @@ CREATE TABLE
         type ENUM ('pdf', 'link', 'book') NOT NULL,
         url VARCHAR(500),
         author_id INT UNSIGNED NOT NULL,
+        category_id INT UNSIGNED NOT NULL
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         deleted_at DATETIME DEFAULT NULL,
         CONSTRAINT fk_materials_author FOREIGN KEY (author_id) REFERENCES users (id) ON DELETE CASCADE
