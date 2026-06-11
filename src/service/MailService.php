@@ -36,7 +36,6 @@ class Mailer
 
             return $this->mail->send();
         } catch (Exception $e) {
-            error_log('Mailer error: ' . $e->getMessage());
             return false;
         }
     }
