@@ -45,4 +45,17 @@ class RedisService
     {
         $this->redis->del($key);
     }
+
+    public function setReq($key, $ttl, $by = 1)
+    {
+        $count = $by === 1
+            ? $this->redis->incr($key)
+            : $this->redis->incrBy($key, $by);
+
+        if ($count === $by) {
+            $this->redis->expire($key, $ttl);
+        }
+
+        return $count;
+    }
 }

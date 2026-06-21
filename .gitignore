@@ -1,3 +1,4 @@
 spam/
 src/vendor/
 .env
+logs/
