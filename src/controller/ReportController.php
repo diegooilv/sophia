@@ -2,16 +2,18 @@
 class ReportController extends Controller
 {
     private ReportService $reportService;
+    private NavigationService $navigationService;
 
     public function __construct()
     {
         $this->reportService = new ReportService();
+        $this->navigationService = new NavigationService();
     }
 
     // $material, $author
     public function material($id)
     {
-        $navItems = $this->reportService->getHeaderItems();
+        $navItems = $this->navigationService->getHeaderItems('report');
         $type = 'material';
         $material = $this->reportService->getMaterial($id);
         $author = $this->reportService->getAuthor($material->getAuthorId());
@@ -23,7 +25,7 @@ class ReportController extends Controller
     // $post, $author
     public function post($id)
     {
-        $navItems = $this->reportService->getHeaderItems();
+        $navItems = $this->navigationService->getHeaderItems('report');
         $type = 'post';
         $post = $this->reportService->getPost($id);
         $author = $this->reportService->getAuthor($id);

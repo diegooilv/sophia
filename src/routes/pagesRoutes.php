@@ -13,4 +13,6 @@ $router->get('/about', [AboutController::class, 'index']);
 $router->get('/ia', [ChatBotController::class, 'index']);
 $router->post('/ia', [ChatBotController::class, 'perguntar']);
 
+$router->post('/auth/check', [AuthController::class, 'check']);
+
 return $router;

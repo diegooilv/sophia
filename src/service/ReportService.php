@@ -41,10 +41,4 @@ class ReportService
             "admin"
         );
     }
-    public function getHeaderItems()
-    {
-        return [
-            'Início' => '/',
-        ];
-    }
 }

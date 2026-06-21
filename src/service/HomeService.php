@@ -9,13 +9,4 @@ class HomeService
     {
     
     }
-
-    public function getHeaderItems()
-    {
-        return [
-            'Início' => '/',
-            'Sobre' => '/about',
-            'Entrar' => '/login',
-        ];
-    }
 }

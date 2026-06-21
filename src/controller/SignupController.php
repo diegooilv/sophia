@@ -5,12 +5,14 @@ class SignupController extends Controller
     private AuthService $authService;
     private CloudinaryService $cloudinaryService;
     private RecaptchaService $recaptchaService;
+    private NavigationService $navigationService;
     public function __construct()
     {
         $this->signupService = new SignupService();
         $this->authService = new AuthService();
         $this->cloudinaryService = new CloudinaryService();
         $this->recaptchaService = new RecaptchaService();
+        $this->navigationService = new NavigationService();
     }
     public function signupForm()
     {
@@ -52,7 +54,7 @@ class SignupController extends Controller
 
     public function signup()
     {
-        $navItems = $this->signupService->getHeaderItems();
+        $navItems = $this->navigationService->getHeaderItems('signup');
         $this->view('signup', compact('navItems'));
     }
 }

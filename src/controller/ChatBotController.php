@@ -3,10 +3,13 @@
 class ChatBotController extends Controller
 {
     private GroqService $service;
+    private NavigationService $navigationService;
 
     public function __construct()
     {
         $this->service = new GroqService();
+        $this->navigationService = new NavigationService();
+
     }
 
     public function index(): void
@@ -39,11 +42,9 @@ class ChatBotController extends Controller
         ]);
         $resposta = $this->service->getContent($chat);
 
+        $navItems = $this->navigationService->getHeaderItems('home');
         $this->view('ia', [
-            'navItems' => [
-                'Início' => '/',
-                'Sobre' => '/about',
-            ],
+            'navItems' => $navItems,
             'pergunta' => $pergunta,
             'resposta' => $resposta,
         ]);

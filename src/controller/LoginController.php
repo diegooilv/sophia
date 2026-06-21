@@ -3,14 +3,18 @@ class LoginController extends Controller
 {
     private LoginService $loginService;
     private AuthService $authService;
+    private NavigationService $navigationService;
+
     public function __construct()
     {
         $this->loginService = new LoginService();
         $this->authService = new AuthService();
+        $this->navigationService = new NavigationService();
+
     }
     public function login()
     {
-        $navItems = $this->loginService->getHeaderItems();
+        $navItems = $this->navigationService->getHeaderItems('login');
         $this->view('login', compact('navItems'));
     }
 
