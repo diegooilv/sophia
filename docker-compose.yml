@@ -92,11 +92,9 @@ services:
       - sophia
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    image: phpmyadmin:latest
     container_name: sophia_phpmyadmin
     restart: unless-stopped
-    expose:
-      - "80"
     environment:
       PMA_HOST: db
       PMA_PORT: 3306
@@ -126,11 +124,12 @@ services:
       - "8080:80"
       - "8081:81"
     volumes:
-      - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./docker/proxy_params:/etc/nginx/proxy_params:ro
-      - ./docker/.htpasswd:/etc/nginx/.htpasswd:ro
-      - ./src/public:/var/www/html/public:ro
-      - ./logs:/var/log/nginx
+    - ./docker/nginx.conf:/etc/nginx/nginx.conf:ro
+    - ./docker/default.conf:/etc/nginx/conf.d/default.conf:ro
+    - ./docker/proxy_params:/etc/nginx/proxy_params:ro
+    - ./docker/.htpasswd:/etc/nginx/.htpasswd:ro
+    - ./src/public:/var/www/html/public:ro
+    - ./logs:/var/log/nginx
       
     depends_on:
       php:
