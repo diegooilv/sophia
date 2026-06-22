@@ -34,6 +34,7 @@ require_once __DIR__ . '/../controller/SignupController.php';
 require_once __DIR__ . '/../controller/LoginController.php';
 require_once __DIR__ . '/../controller/AboutController.php';
 require_once __DIR__ . '/../controller/ChatBotController.php';
+require_once __DIR__ . '/../controller/UserPageController.php';
 
 
 // Services
@@ -51,6 +52,7 @@ require_once __DIR__ . '/../service/RedisService.php';
 require_once __DIR__ . '/../service/CsrfService.php';
 require_once __DIR__ . '/../service/NavigationService.php';
 require_once __DIR__ . '/../service/RateLimitService.php';
+require_once __DIR__ . '/../service/UserService.php';
 
 
 // Layouts

@@ -15,4 +15,6 @@ $router->post('/ia', [ChatBotController::class, 'perguntar']);
 
 $router->post('/auth/check', [AuthController::class, 'check']);
 
+$router->get('/user/{username}', [UserPageController::class, 'index']);
+
 return $router;
