@@ -1,7 +1,10 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 //
+
 require __DIR__ . '/../core/bootstrap.php';
 
 $rateLimit = new RateLimitService();

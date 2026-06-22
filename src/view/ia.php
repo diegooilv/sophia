@@ -67,6 +67,7 @@
                         stroke-linejoin="round" />
                 </svg>
             </button>
+            <input type="hidden" name="csrf" value="<?= CsrfService::token() ?>">
         </form>
     </section>
 </main>
