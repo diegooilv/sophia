@@ -6,7 +6,7 @@ class RecaptchaService
 
     public function __construct()
     {
-        $this->secret = require __DIR__ . '/../config/recaptcha.php';
+        $this->secret = Recaptcha::captchaSecret();
     }
 
     public function verify(string $token): bool

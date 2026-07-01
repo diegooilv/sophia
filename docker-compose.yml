@@ -31,6 +31,7 @@ services:
       CLOUDINARY_API_KEY: ${CLOUDINARY_API_KEY}
       CLOUDINARY_API_SECRET: ${CLOUDINARY_API_SECRET}
       CAPTCHA_SECRET: ${CAPTCHA_SECRET}
+      CAPTCHA_PUBLIC: ${CAPTCHA_PUBLIC}
       GROQ_API_KEY: ${GROQ_API_KEY}
     healthcheck:
       test: ["CMD-SHELL", "curl -fsS --max-time 5 http://localhost/ || exit 1"]

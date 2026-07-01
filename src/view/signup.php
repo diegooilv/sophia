@@ -53,7 +53,7 @@
                 </div>
             </div>
 
-            <div class="g-recaptcha" data-sitekey="6LfU5g4tAAAAADP7cLanpolGa_LrsseTc6Cy6yhz"
+            <div class="g-recaptcha" data-sitekey="<?= Recaptcha::captchaPublic() ?>"
                 data-callback="enableSubmit" data-expired-callback="disableSubmit"></div>
 
             <button type="submit" id="loginBtn" disabled>Criar conta</button>
