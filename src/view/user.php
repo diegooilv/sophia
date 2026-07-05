@@ -96,4 +96,5 @@
     </main>
 
     <?= renderFooter() ?>
+    <?= renderVLibras() ?>
 <?php endif; ?>

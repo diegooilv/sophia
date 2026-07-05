@@ -73,3 +73,4 @@
 </main>
 
 <?= renderFooter() ?>
+<?= renderVLibras() ?>

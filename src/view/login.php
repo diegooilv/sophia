@@ -39,6 +39,7 @@
 
     </main>
     <?= renderFooter() ?>
+    <?= renderVLibras() ?>
 </body>
 
 <script type="module" src="/assets/js/login.js"></script>

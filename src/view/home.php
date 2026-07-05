@@ -15,6 +15,7 @@
     </main>
 
     <?= renderFooter() ?>
+    <?= renderVLibras() ?>
 </body>
 
 </html>

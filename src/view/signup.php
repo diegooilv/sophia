@@ -61,5 +61,6 @@
         <p>Já tem uma conta? <a href="/login">Entrar</a></p>
     </main>
     <?= renderFooter() ?>
+    <?= renderVLibras() ?>
 </body>
 <script type="module" src="/assets/js/signup.js"></script>

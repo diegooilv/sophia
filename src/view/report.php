@@ -221,3 +221,4 @@ if ($type === 'material') {
     echo reportPost($post, $author);
 }
 echo renderFooter();
+echo renderVLibras();

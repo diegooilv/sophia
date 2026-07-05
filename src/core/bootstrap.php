@@ -61,3 +61,5 @@ require_once __DIR__ . '/../view/layouts/header.php';
 require_once __DIR__ . '/../view/layouts/footer.php';
 require_once __DIR__ . '/../view/layouts/post.php';
 require_once __DIR__ . '/../view/layouts/material.php';
+require_once __DIR__ . '/../view/layouts/vlibras.php';
+
