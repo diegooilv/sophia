@@ -9,6 +9,8 @@
 @import url("./modules/about.css");
 @import url("./modules/ia.css");
 @import url("./modules/user.css");
+@import url("./modules/philosophers.css");
+@import url("./modules/philosopher-profile.css");
 
 @font-face {
     font-family: "Cinzel";

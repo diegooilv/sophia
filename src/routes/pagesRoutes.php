@@ -17,4 +17,8 @@ $router->post('/auth/check', [AuthController::class, 'check']);
 
 $router->get('/user/{username}', [UserPageController::class, 'index']);
 
+$router->get('/philosophers', [Philosophers::class, 'philosophers']);
+
+$router->get('/philosophers/{name}', [Philosophers::class, 'philosophersProfile']);
+
 return $router;
