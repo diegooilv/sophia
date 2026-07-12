@@ -14,6 +14,7 @@
     }
 
     function openItem(item, trigger) {
+        loadImages(item);
         item.classList.add("is-open");
         trigger.setAttribute("aria-expanded", "true");
         setListDelays(item);
@@ -22,6 +23,15 @@
     function closeItem(item, trigger) {
         item.classList.remove("is-open");
         trigger.setAttribute("aria-expanded", "false");
+    }
+
+    function loadImages(item) {
+        item.querySelectorAll("img[data-src]").forEach((img) => {
+            if (!img.src) {
+                img.src = img.dataset.src;
+                img.removeAttribute("data-src");
+            }
+        });
     }
 
     items.forEach((item) => {

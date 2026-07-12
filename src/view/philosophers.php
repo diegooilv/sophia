@@ -34,7 +34,7 @@
                 <div class="philosophers-category__panel" data-philosophers-panel>
                     <div class="philosophers-category__body">
                         <img class="philosophers-category__image"
-                            src="/assets/images/philosophers/banner/PreSocratico.png" alt="">
+                           data-src="/assets/images/philosophers/banner/PreSocratico.png" alt="">
                         <p class="philosophers-category__description">
                             Os filósofos pré-socráticos foram os primeiros pensadores da Grécia Antiga, anteriores a
                             Sócrates. Buscavam compreender a origem e o funcionamento do universo por meio da razão,
@@ -45,7 +45,7 @@
                         <ul class="philosophers-list">
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/thales-de-mileto">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Thales.webp"
+                                    <img class="philosophers-list__image"data-src="/assets/images/philosophers/Thales.webp"
                                         alt="Thales de Mileto">
                                     <h3 class="philosophers-list__name">Thales de Mileto</h3>
                                     <p class="philosophers-list__description">
@@ -57,7 +57,7 @@
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/anaximandro">
                                     <img class="philosophers-list__image"
-                                        src="/assets/images/philosophers/Anaximandro.webp" alt="Anaximandro">
+                                       data-src="/assets/images/philosophers/Anaximandro.webp" alt="Anaximandro">
                                     <h3 class="philosophers-list__name">Anaximandro</h3>
                                     <p class="philosophers-list__description">
                                         Discípulo de Tales, propôs o "apeíron" (o indefinido/ilimitado) como origem
@@ -68,7 +68,7 @@
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/pitagoras">
                                     <img class="philosophers-list__image"
-                                        src="/assets/images/philosophers/Pitagoras.webp" alt="Pitágoras">
+                                       data-src="/assets/images/philosophers/Pitagoras.webp" alt="Pitágoras">
                                     <h3 class="philosophers-list__name">Pitágoras</h3>
                                     <p class="philosophers-list__description">
                                         Fundador de uma escola filosófica e religiosa, defendia que os números eram a
@@ -96,7 +96,7 @@
                 </button>
                 <div class="philosophers-category__panel" data-philosophers-panel>
                     <div class="philosophers-category__body">
-                        <img class="philosophers-category__image" src="/assets/images/philosophers/banner/Classicos.png"
+                        <img class="philosophers-category__image"data-src="/assets/images/philosophers/banner/Classicos.png"
                             alt="">
                         <p class="philosophers-category__description">
                             O período clássico é marcado pela filosofia de Sócrates, Platão e Aristóteles, que
@@ -108,7 +108,7 @@
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/socrates">
                                     <img class="philosophers-list__image"
-                                        src="/assets/images/philosophers/Socrates.webp" alt="Sócrates">
+                                       data-src="/assets/images/philosophers/Socrates.webp" alt="Sócrates">
                                     <h3 class="philosophers-list__name">Sócrates</h3>
                                     <p class="philosophers-list__description">
                                         Não deixou obras escritas, mas revolucionou a filosofia com o método
@@ -118,7 +118,7 @@
                             </li>
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/platao">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Platao.webp"
+                                    <img class="philosophers-list__image"data-src="/assets/images/philosophers/Platao.webp"
                                         alt="Platão">
                                     <h3 class="philosophers-list__name">Platão</h3>
                                     <p class="philosophers-list__description">
@@ -130,7 +130,7 @@
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/aristoteles">
                                     <img class="philosophers-list__image"
-                                        src="/assets/images/philosophers/Aristoteles.webp" alt="Aristóteles">
+                                       data-src="/assets/images/philosophers/Aristoteles.webp" alt="Aristóteles">
                                     <h3 class="philosophers-list__name">Aristóteles</h3>
                                     <p class="philosophers-list__description">
                                         Aluno de Platão, sistematizou a lógica e contribuiu para diversas áreas como
@@ -161,7 +161,7 @@
                 </button>
                 <div class="philosophers-category__panel" data-philosophers-panel>
                     <div class="philosophers-category__body">
-                        <img class="philosophers-category__image" src="" alt="">
+                        <img class="philosophers-category__image"data-src="" alt="">
                         <p class="philosophers-category__description">
                             A filosofia medieval foi profundamente marcada pela tentativa de conciliar fé e razão,
                             tendo como pano de fundo o pensamento cristão, judaico e islâmico. Destacam-se os
@@ -171,7 +171,7 @@
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/santo-agostinho">
                                     <img class="philosophers-list__image"
-                                        src="/assets/images/philosophers/Agostinho.webp" alt="Santo Agostinho">
+                                       data-src="/assets/images/philosophers/Agostinho.webp" alt="Santo Agostinho">
                                     <h3 class="philosophers-list__name">Santo Agostinho</h3>
                                     <p class="philosophers-list__description">
                                         Uniu a filosofia platônica ao cristianismo, discutindo temas como o
@@ -182,7 +182,7 @@
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/tomas-de-aquino">
                                     <img class="philosophers-list__image"
-                                        src="/assets/images/philosophers/Tomas de Aquino.webp" alt="Tomás de Aquino">
+                                       data-src="/assets/images/philosophers/Tomas de Aquino.webp" alt="Tomás de Aquino">
                                     <h3 class="philosophers-list__name">Tomás de Aquino</h3>
                                     <p class="philosophers-list__description">
                                         Combinou a filosofia aristotélica com a teologia cristã, propondo cinco
@@ -193,7 +193,7 @@
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/guilherme-de-ockham">
                                     <img class="philosophers-list__image"
-                                        src="/assets/images/philosophers/Guilherme.webp" alt="Guilherme de Ockham">
+                                       data-src="/assets/images/philosophers/Guilherme.webp" alt="Guilherme de Ockham">
                                     <h3 class="philosophers-list__name">Guilherme de Ockham</h3>
                                     <p class="philosophers-list__description">
                                         Ficou conhecido pela "navalha de Ockham", princípio que defende a
@@ -222,7 +222,7 @@
                 </button>
                 <div class="philosophers-category__panel" data-philosophers-panel>
                     <div class="philosophers-category__body">
-                        <img class="philosophers-category__image" src="" alt="">
+                        <img class="philosophers-category__image"data-src="" alt="">
                         <p class="philosophers-category__description">
                             A filosofia moderna surge com o rompimento da tradição medieval, valorizando a razão, o
                             método científico e o indivíduo. É marcada pelo racionalismo, empirismo e pelas grandes
@@ -232,7 +232,7 @@
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/rene-descartes">
                                     <img class="philosophers-list__image"
-                                        src="/assets/images/philosophers/Descartes.webp" alt="René Descartes">
+                                       data-src="/assets/images/philosophers/Descartes.webp" alt="René Descartes">
                                     <h3 class="philosophers-list__name">René Descartes</h3>
                                     <p class="philosophers-list__description">
                                         Considerado o pai da filosofia moderna, defendeu a dúvida sistemática como
@@ -243,7 +243,7 @@
                             </li>
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/david-hume">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Hume.webp"
+                                    <img class="philosophers-list__image"data-src="/assets/images/philosophers/Hume.webp"
                                         alt="David Hume">
                                     <h3 class="philosophers-list__name">David Hume</h3>
                                     <p class="philosophers-list__description">
@@ -255,7 +255,7 @@
                             </li>
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/immanuel-kant">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Kant.webp"
+                                    <img class="philosophers-list__image"data-src="/assets/images/philosophers/Kant.webp"
                                         alt="Immanuel Kant">
                                     <h3 class="philosophers-list__name">Immanuel Kant</h3>
                                     <p class="philosophers-list__description">
@@ -267,7 +267,7 @@
                             </li>
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/georg-wilhelm-friedrich-hegel">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Hegel.webp"
+                                    <img class="philosophers-list__image"data-src="/assets/images/philosophers/Hegel.webp"
                                         alt="Hegel">
                                     <h3 class="philosophers-list__name">G. W. F. Hegel</h3>
                                     <p class="philosophers-list__description">
@@ -280,7 +280,7 @@
                             </li>
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/thomas-hobbes">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Hobbes.webp"
+                                    <img class="philosophers-list__image"data-src="/assets/images/philosophers/Hobbes.webp"
                                         alt="Thomas Hobbes">
                                     <h3 class="philosophers-list__name">Thomas Hobbes</h3>
                                     <p class="philosophers-list__description">
@@ -293,7 +293,7 @@
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/john-locke">
                                     <img class="philosophers-list__image"
-                                        src="/assets/images/philosophers/JohnLocke.webp" alt="John Locke">
+                                       data-src="/assets/images/philosophers/JohnLocke.webp" alt="John Locke">
                                     <h3 class="philosophers-list__name">John Locke</h3>
                                     <p class="philosophers-list__description">
                                         Pai do liberalismo político e um dos principais nomes do empirismo, defendia a
@@ -306,7 +306,7 @@
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/jean-jacques-rousseau">
                                     <img class="philosophers-list__image"
-                                        src="/assets/images/philosophers/Rousseau.webp" alt="Jean-Jacques Rousseau">
+                                       data-src="/assets/images/philosophers/Rousseau.webp" alt="Jean-Jacques Rousseau">
                                     <h3 class="philosophers-list__name">Jean-Jacques Rousseau</h3>
                                     <p class="philosophers-list__description">
                                         Defendia que a sociedade deveria se organizar em torno da vontade geral, vendo
@@ -317,7 +317,7 @@
                             </li>
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/francis-bacon">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Bacon.webp"
+                                    <img class="philosophers-list__image"data-src="/assets/images/philosophers/Bacon.webp"
                                         alt="Francis Bacon">
                                     <h3 class="philosophers-list__name">Francis Bacon</h3>
                                     <p class="philosophers-list__description">
@@ -347,7 +347,7 @@
                 </button>
                 <div class="philosophers-category__panel" data-philosophers-panel>
                     <div class="philosophers-category__body">
-                        <img class="philosophers-category__image" src="" alt="">
+                        <img class="philosophers-category__image"data-src="" alt="">
                         <p class="philosophers-category__description">
                             A filosofia contemporânea abrange do século XIX até os dias atuais, questionando
                             verdades absolutas, estruturas de poder e a própria condição humana. Envolve correntes
@@ -357,7 +357,7 @@
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/soren-kierkegaard">
                                     <img class="philosophers-list__image"
-                                        src="/assets/images/philosophers/Kierkegaard.webp" alt="Søren Kierkegaard">
+                                       data-src="/assets/images/philosophers/Kierkegaard.webp" alt="Søren Kierkegaard">
                                     <h3 class="philosophers-list__name">Søren Kierkegaard</h3>
                                     <p class="philosophers-list__description">
                                         Considerado o precursor do existencialismo, explorou a angústia, o desespero e o
@@ -369,7 +369,7 @@
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/friedrich-nietzsche">
                                     <img class="philosophers-list__image"
-                                        src="/assets/images/philosophers/Nietzsche.webp" alt="Friedrich Nietzsche">
+                                       data-src="/assets/images/philosophers/Nietzsche.webp" alt="Friedrich Nietzsche">
                                     <h3 class="philosophers-list__name">Friedrich Nietzsche</h3>
                                     <p class="philosophers-list__description">
                                         Desafiou os fundamentos da moral e da metafísica ocidentais, criando conceitos
@@ -381,7 +381,7 @@
                             </li>
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/edmund-husserl">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Husserl.webp"
+                                    <img class="philosophers-list__image"data-src="/assets/images/philosophers/Husserl.webp"
                                         alt="Edmund Husserl">
                                     <h3 class="philosophers-list__name">Edmund Husserl</h3>
                                     <p class="philosophers-list__description">
@@ -394,7 +394,7 @@
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/martin-heidegger">
                                     <img class="philosophers-list__image"
-                                        src="/assets/images/philosophers/Heidegger.webp" alt="Martin Heidegger">
+                                       data-src="/assets/images/philosophers/Heidegger.webp" alt="Martin Heidegger">
                                     <h3 class="philosophers-list__name">Martin Heidegger</h3>
                                     <p class="philosophers-list__description">
                                         Retomou a pergunta pelo sentido do ser em sua obra "Ser e Tempo", tornando-se
@@ -405,7 +405,7 @@
                             </li>
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/jean-paul-sartre">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Sartre.webp"
+                                    <img class="philosophers-list__image"data-src="/assets/images/philosophers/Sartre.webp"
                                         alt="Jean-Paul Sartre">
                                     <h3 class="philosophers-list__name">Jean-Paul Sartre</h3>
                                     <p class="philosophers-list__description">
@@ -418,7 +418,7 @@
                             </li>
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/simone-de-beauvoir">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Simone.webp"
+                                    <img class="philosophers-list__image"data-src="/assets/images/philosophers/Simone.webp"
                                         alt="Simone de Beauvoir">
                                     <h3 class="philosophers-list__name">Simone de Beauvoir</h3>
                                     <p class="philosophers-list__description">
@@ -430,7 +430,7 @@
                             </li>
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/albert-camus">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Camus.webp"
+                                    <img class="philosophers-list__image"data-src="/assets/images/philosophers/Camus.webp"
                                         alt="Albert Camus">
                                     <h3 class="philosophers-list__name">Albert Camus</h3>
                                     <p class="philosophers-list__description">
@@ -443,7 +443,7 @@
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/michel-foucault">
                                     <img class="philosophers-list__image"
-                                        src="/assets/images/philosophers/Foucault.webp" alt="Michel Foucault">
+                                       data-src="/assets/images/philosophers/Foucault.webp" alt="Michel Foucault">
                                     <h3 class="philosophers-list__name">Michel Foucault</h3>
                                     <p class="philosophers-list__description">
                                         Investigou as relações entre poder, saber e as instituições sociais,
