@@ -235,19 +235,21 @@
                                         src="/assets/images/philosophers/Descartes.webp" alt="René Descartes">
                                     <h3 class="philosophers-list__name">René Descartes</h3>
                                     <p class="philosophers-list__description">
-                                        Considerado o pai da filosofia moderna, ficou famoso pela frase "penso, logo
-                                        existo" e pelo método da dúvida sistemática.
+                                        Considerado o pai da filosofia moderna, defendeu a dúvida sistemática como
+                                        método e sintetizou seu
+                                        pensamento na célebre frase "penso, logo existo".
                                     </p>
                                 </a>
                             </li>
                             <li class="philosophers-list__item">
-                                <a class="philosophers-list__link" href="/philosophers/john-locke">
-                                    <img class="philosophers-list__image"
-                                        src="/assets/images/philosophers/JohnLocke.webp" alt="John Locke">
-                                    <h3 class="philosophers-list__name">John Locke</h3>
+                                <a class="philosophers-list__link" href="/philosophers/david-hume">
+                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Hume.webp"
+                                        alt="David Hume">
+                                    <h3 class="philosophers-list__name">David Hume</h3>
                                     <p class="philosophers-list__description">
-                                        Um dos principais nomes do empirismo, defendia que todo conhecimento vem da
-                                        experiência, rejeitando a ideia de ideias inatas.
+                                        Um dos maiores nomes do empirismo, sustentava que todo conhecimento nasce da
+                                        experiência sensível,
+                                        questionando a validade racional da causalidade e das certezas metafísicas.
                                     </p>
                                 </a>
                             </li>
@@ -257,8 +259,71 @@
                                         alt="Immanuel Kant">
                                     <h3 class="philosophers-list__name">Immanuel Kant</h3>
                                     <p class="philosophers-list__description">
-                                        Buscou conciliar racionalismo e empirismo, desenvolvendo uma filosofia
-                                        crítica sobre os limites e possibilidades da razão humana.
+                                        Propôs uma síntese entre racionalismo e empirismo através da filosofia crítica,
+                                        investigando
+                                        os limites e as condições de possibilidade do conhecimento humano.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/georg-wilhelm-friedrich-hegel">
+                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Hegel.webp"
+                                        alt="Hegel">
+                                    <h3 class="philosophers-list__name">G. W. F. Hegel</h3>
+                                    <p class="philosophers-list__description">
+                                        Criador da dialética como método filosófico, entendia que a realidade e a
+                                        história avançam
+                                        através de contradições e superações, marcando profundamente o pensamento
+                                        moderno.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/thomas-hobbes">
+                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Hobbes.webp"
+                                        alt="Thomas Hobbes">
+                                    <h3 class="philosophers-list__name">Thomas Hobbes</h3>
+                                    <p class="philosophers-list__description">
+                                        Precursor do contratualismo, defendia que os indivíduos abrem mão de parte de
+                                        sua liberdade
+                                        em favor de um Estado soberano capaz de garantir ordem e segurança.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/john-locke">
+                                    <img class="philosophers-list__image"
+                                        src="/assets/images/philosophers/JohnLocke.webp" alt="John Locke">
+                                    <h3 class="philosophers-list__name">John Locke</h3>
+                                    <p class="philosophers-list__description">
+                                        Pai do liberalismo político e um dos principais nomes do empirismo, defendia a
+                                        mente humana
+                                        como uma "tábula rasa" e o governo como garantidor dos direitos naturais dos
+                                        cidadãos.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/jean-jacques-rousseau">
+                                    <img class="philosophers-list__image"
+                                        src="/assets/images/philosophers/Rousseau.webp" alt="Jean-Jacques Rousseau">
+                                    <h3 class="philosophers-list__name">Jean-Jacques Rousseau</h3>
+                                    <p class="philosophers-list__description">
+                                        Defendia que a sociedade deveria se organizar em torno da vontade geral, vendo
+                                        no contrato
+                                        social o caminho para conciliar liberdade individual e vida coletiva.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/francis-bacon">
+                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Bacon.webp"
+                                        alt="Francis Bacon">
+                                    <h3 class="philosophers-list__name">Francis Bacon</h3>
+                                    <p class="philosophers-list__description">
+                                        Pioneiro do método científico moderno, defendia que o conhecimento deve nascer
+                                        da observação
+                                        e da experimentação, lançando as bases empíricas da ciência.
                                     </p>
                                 </a>
                             </li>
@@ -352,7 +417,7 @@
                                 </a>
                             </li>
                             <li class="philosophers-list__item">
-                                <a class="philosophers-list__link" href="/philosophers/simone de-beauvoir">
+                                <a class="philosophers-list__link" href="/philosophers/simone-de-beauvoir">
                                     <img class="philosophers-list__image" src="/assets/images/philosophers/Simone.webp"
                                         alt="Simone de Beauvoir">
                                     <h3 class="philosophers-list__name">Simone de Beauvoir</h3>
@@ -377,8 +442,8 @@
                             </li>
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/michel-foucault">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Focault.webp"
-                                        alt="Michel Foucault">
+                                    <img class="philosophers-list__image"
+                                        src="/assets/images/philosophers/Foucault.webp" alt="Michel Foucault">
                                     <h3 class="philosophers-list__name">Michel Foucault</h3>
                                     <p class="philosophers-list__description">
                                         Investigou as relações entre poder, saber e as instituições sociais,
