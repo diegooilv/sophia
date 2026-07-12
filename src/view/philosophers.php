@@ -33,7 +33,8 @@
                 </button>
                 <div class="philosophers-category__panel" data-philosophers-panel>
                     <div class="philosophers-category__body">
-                        <img class="philosophers-category__image" src="/assets/images/philosophers/banner/PreSocratico.png" alt="">
+                        <img class="philosophers-category__image"
+                            src="/assets/images/philosophers/banner/PreSocratico.png" alt="">
                         <p class="philosophers-category__description">
                             Os filósofos pré-socráticos foram os primeiros pensadores da Grécia Antiga, anteriores a
                             Sócrates. Buscavam compreender a origem e o funcionamento do universo por meio da razão,
@@ -66,8 +67,8 @@
                             </li>
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/pitagoras">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Pitagoras.webp"
-                                        alt="Pitágoras">
+                                    <img class="philosophers-list__image"
+                                        src="/assets/images/philosophers/Pitagoras.webp" alt="Pitágoras">
                                     <h3 class="philosophers-list__name">Pitágoras</h3>
                                     <p class="philosophers-list__description">
                                         Fundador de uma escola filosófica e religiosa, defendia que os números eram a
@@ -95,7 +96,8 @@
                 </button>
                 <div class="philosophers-category__panel" data-philosophers-panel>
                     <div class="philosophers-category__body">
-                        <img class="philosophers-category__image" src="/assets/images/philosophers/banner/Classicos.png" alt="">
+                        <img class="philosophers-category__image" src="/assets/images/philosophers/banner/Classicos.png"
+                            alt="">
                         <p class="philosophers-category__description">
                             O período clássico é marcado pela filosofia de Sócrates, Platão e Aristóteles, que
                             deslocaram o foco da investigação da natureza para o ser humano, a ética, a política e o
@@ -105,8 +107,8 @@
                         <ul class="philosophers-list">
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/socrates">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Socrates.webp"
-                                        alt="Sócrates">
+                                    <img class="philosophers-list__image"
+                                        src="/assets/images/philosophers/Socrates.webp" alt="Sócrates">
                                     <h3 class="philosophers-list__name">Sócrates</h3>
                                     <p class="philosophers-list__description">
                                         Não deixou obras escritas, mas revolucionou a filosofia com o método
@@ -168,8 +170,8 @@
                         <ul class="philosophers-list">
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/santo-agostinho">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Agostinho.webp"
-                                        alt="Santo Agostinho">
+                                    <img class="philosophers-list__image"
+                                        src="/assets/images/philosophers/Agostinho.webp" alt="Santo Agostinho">
                                     <h3 class="philosophers-list__name">Santo Agostinho</h3>
                                     <p class="philosophers-list__description">
                                         Uniu a filosofia platônica ao cristianismo, discutindo temas como o
@@ -190,8 +192,8 @@
                             </li>
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/guilherme-de-ockham">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Guilherme.webp"
-                                        alt="Guilherme de Ockham">
+                                    <img class="philosophers-list__image"
+                                        src="/assets/images/philosophers/Guilherme.webp" alt="Guilherme de Ockham">
                                     <h3 class="philosophers-list__name">Guilherme de Ockham</h3>
                                     <p class="philosophers-list__description">
                                         Ficou conhecido pela "navalha de Ockham", princípio que defende a
@@ -229,8 +231,8 @@
                         <ul class="philosophers-list">
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/rene-descartes">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Descartes.webp"
-                                        alt="René Descartes">
+                                    <img class="philosophers-list__image"
+                                        src="/assets/images/philosophers/Descartes.webp" alt="René Descartes">
                                     <h3 class="philosophers-list__name">René Descartes</h3>
                                     <p class="philosophers-list__description">
                                         Considerado o pai da filosofia moderna, ficou famoso pela frase "penso, logo
@@ -240,8 +242,8 @@
                             </li>
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/john-locke">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/JohnLocke.webp"
-                                        alt="John Locke">
+                                    <img class="philosophers-list__image"
+                                        src="/assets/images/philosophers/JohnLocke.webp" alt="John Locke">
                                     <h3 class="philosophers-list__name">John Locke</h3>
                                     <p class="philosophers-list__description">
                                         Um dos principais nomes do empirismo, defendia que todo conhecimento vem da
@@ -288,13 +290,51 @@
                         </p>
                         <ul class="philosophers-list">
                             <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/soren-kierkegaard">
+                                    <img class="philosophers-list__image"
+                                        src="/assets/images/philosophers/Kierkegaard.webp" alt="Søren Kierkegaard">
+                                    <h3 class="philosophers-list__name">Søren Kierkegaard</h3>
+                                    <p class="philosophers-list__description">
+                                        Considerado o precursor do existencialismo, explorou a angústia, o desespero e o
+                                        salto de fé
+                                        como caminhos para a autenticidade da existência individual.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/friedrich-nietzsche">
-                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Nietzsche.webp"
-                                        alt="Friedrich Nietzsche">
+                                    <img class="philosophers-list__image"
+                                        src="/assets/images/philosophers/Nietzsche.webp" alt="Friedrich Nietzsche">
                                     <h3 class="philosophers-list__name">Friedrich Nietzsche</h3>
                                     <p class="philosophers-list__description">
-                                        Criticou os valores morais tradicionais e a metafísica ocidental, propondo
-                                        conceitos como a "vontade de potência" e o "super-homem".
+                                        Desafiou os fundamentos da moral e da metafísica ocidentais, criando conceitos
+                                        como
+                                        "vontade de potência", "eterno retorno" e "super-homem" para pensar a superação
+                                        dos valores estabelecidos.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/edmund-husserl">
+                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Husserl.webp"
+                                        alt="Edmund Husserl">
+                                    <h3 class="philosophers-list__name">Edmund Husserl</h3>
+                                    <p class="philosophers-list__description">
+                                        Fundador da fenomenologia, dedicou-se a investigar as estruturas da consciência
+                                        e da experiência
+                                        direta, lançando as bases para grande parte da filosofia do século XX.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/martin-heidegger">
+                                    <img class="philosophers-list__image"
+                                        src="/assets/images/philosophers/Heidegger.webp" alt="Martin Heidegger">
+                                    <h3 class="philosophers-list__name">Martin Heidegger</h3>
+                                    <p class="philosophers-list__description">
+                                        Retomou a pergunta pelo sentido do ser em sua obra "Ser e Tempo", tornando-se
+                                        referência essencial
+                                        para a fenomenologia, o existencialismo e a filosofia contemporânea.
                                     </p>
                                 </a>
                             </li>
@@ -304,8 +344,34 @@
                                         alt="Jean-Paul Sartre">
                                     <h3 class="philosophers-list__name">Jean-Paul Sartre</h3>
                                     <p class="philosophers-list__description">
-                                        Principal nome do existencialismo, defendia que "a existência precede a
-                                        essência" e que o ser humano é radicalmente livre.
+                                        Principal expoente do existencialismo francês, defendeu que "a existência
+                                        precede a essência"
+                                        e que o ser humano está condenado a ser livre, construindo a si mesmo através de
+                                        suas escolhas.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/simone de-beauvoir">
+                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Simone.webp"
+                                        alt="Simone de Beauvoir">
+                                    <h3 class="philosophers-list__name">Simone de Beauvoir</h3>
+                                    <p class="philosophers-list__description">
+                                        Em "O Segundo Sexo", investigou a construção social da condição feminina e a
+                                        busca pela liberdade,
+                                        tornando-se um dos pilares do feminismo contemporâneo.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/albert-camus">
+                                    <img class="philosophers-list__image" src="/assets/images/philosophers/Camus.webp"
+                                        alt="Albert Camus">
+                                    <h3 class="philosophers-list__name">Albert Camus</h3>
+                                    <p class="philosophers-list__description">
+                                        Explorou o absurdo da existência humana diante de um universo indiferente,
+                                        propondo a revolta
+                                        e a aceitação lúcida da vida como respostas ao sem-sentido.
                                     </p>
                                 </a>
                             </li>
@@ -315,8 +381,9 @@
                                         alt="Michel Foucault">
                                     <h3 class="philosophers-list__name">Michel Foucault</h3>
                                     <p class="philosophers-list__description">
-                                        Analisou as relações entre poder, saber e as instituições sociais,
-                                        influenciando profundamente as ciências humanas contemporâneas.
+                                        Investigou as relações entre poder, saber e as instituições sociais,
+                                        revolucionando a forma
+                                        como compreendemos a loucura, a prisão, a sexualidade e o controle social.
                                     </p>
                                 </a>
                             </li>
