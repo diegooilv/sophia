@@ -34,7 +34,7 @@
                 <div class="philosophers-category__panel" data-philosophers-panel>
                     <div class="philosophers-category__body">
                         <img class="philosophers-category__image"
-                            data-src="/assets/images/philosophers/banner/PreSocratico.png" alt="">
+                            data-src="/assets/images/philosophers/banner/PreSocraticos.webp" alt="Banner Pré Socrático">
                         <p class="philosophers-category__description">
                             Os filósofos pré-socráticos foram os primeiros pensadores da Grécia Antiga, anteriores a
                             Sócrates. Buscavam compreender a origem e o funcionamento do universo por meio da razão,
@@ -209,7 +209,7 @@
                 <div class="philosophers-category__panel" data-philosophers-panel>
                     <div class="philosophers-category__body">
                         <img class="philosophers-category__image"
-                            data-src="/assets/images/philosophers/banner/Classicos.png" alt="">
+                            data-src="/assets/images/philosophers/banner/Classicos.webp" alt="Banner Classicos">
                         <p class="philosophers-category__description">
                             O período clássico é marcado pela filosofia de Sócrates, Platão e Aristóteles, que
                             deslocaram o foco da investigação da natureza para o ser humano, a ética, a política e o
@@ -269,7 +269,7 @@
                 <div class="philosophers-category__panel" data-philosophers-panel>
                     <div class="philosophers-category__body">
                         <img class="philosophers-category__image"
-                            data-src="/assets/images/philosophers/banner/Helenismo.png" alt="">
+                            data-src="/assets/images/philosophers/banner/Helenismo.webp" alt="Banner Helenismo">
                         <p class="philosophers-category__description">
                             Após a morte de Alexandre, o Grande, o mundo grego se expandiu e entrou em contato com
                             novas culturas, dando origem a escolas filosóficas voltadas à busca da tranquilidade
@@ -399,7 +399,7 @@
                 </button>
                 <div class="philosophers-category__panel" data-philosophers-panel>
                     <div class="philosophers-category__body">
-                        <img class="philosophers-category__image" data-src="" alt="">
+                        <img class="philosophers-category__image" data-src="/assets/images/philosophers/banner/Medievais.webp" alt="">
                         <p class="philosophers-category__description">
                             A filosofia medieval foi profundamente marcada pela tentativa de conciliar fé e razão,
                             tendo como pano de fundo o pensamento cristão, judaico e islâmico. Destacam-se os
@@ -461,7 +461,7 @@
                 </button>
                 <div class="philosophers-category__panel" data-philosophers-panel>
                     <div class="philosophers-category__body">
-                        <img class="philosophers-category__image" data-src="" alt="">
+                        <img class="philosophers-category__image" data-src="/assets/images/philosophers/banner/Modernos.webp" alt="Banner Modernos">
                         <p class="philosophers-category__description">
                             A filosofia moderna surge com o rompimento da tradição medieval, valorizando a razão, o
                             método científico e o indivíduo. É marcada pelo racionalismo, empirismo e pelas grandes
@@ -587,7 +587,7 @@
                 </button>
                 <div class="philosophers-category__panel" data-philosophers-panel>
                     <div class="philosophers-category__body">
-                        <img class="philosophers-category__image" data-src="" alt="">
+                        <img class="philosophers-category__image" data-src="/assets/images/philosophers/banner/Contemporaneos.webp" alt="Banner Conteporaneos">
                         <p class="philosophers-category__description">
                             A filosofia contemporânea abrange do século XIX até os dias atuais, questionando
                             verdades absolutas, estruturas de poder e a própria condição humana. Envolve correntes

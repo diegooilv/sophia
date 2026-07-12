@@ -31,7 +31,7 @@ $name = $p['name'] ?? 'Filósofo';
             <nav class="philosophers-profile__breadcrumb" aria-label="breadcrumb">
                 <a href="/philosophers" class="philosophers-profile__breadcrumb-link">Filósofos</a>
                 <span class="philosophers-profile__breadcrumb-sep" aria-hidden="true">/</span>
-                <a href="/philosophers#<?= e($p['era_slug'] ?? '') ?>" class="philosophers-profile__breadcrumb-link">
+                <a href="/philosophers" class="philosophers-profile__breadcrumb-link">
                     <?= e($p['era']) ?>
                 </a>
                 <span class="philosophers-profile__breadcrumb-sep" aria-hidden="true">/</span>
