@@ -259,6 +259,132 @@
                     <span class="philosophers-category__heading">
                         <svg class="philosophers-category__svg" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M4 20h16M5 20V9M9 20V9M15 20V9M19 20V9M3 9l9-5 9 5H3Z" stroke="currentColor"
+                                stroke-width="1.4" stroke-linejoin="round" />
+                        </svg>
+                        <h2 class="philosophers-category__title">Helenismo</h2>
+                    </span>
+                    <span class="philosophers-category__icon" aria-hidden="true"></span>
+                </button>
+                <div class="philosophers-category__panel" data-philosophers-panel>
+                    <div class="philosophers-category__body">
+                        <img class="philosophers-category__image"
+                            data-src="/assets/images/philosophers/banner/Helenismo.png" alt="">
+                        <p class="philosophers-category__description">
+                            Após a morte de Alexandre, o Grande, o mundo grego se expandiu e entrou em contato com
+                            novas culturas, dando origem a escolas filosóficas voltadas à busca da tranquilidade
+                            individual diante das incertezas da existência. Estoicismo, epicurismo, ceticismo e
+                            cinismo marcaram esse período, deslocando o foco da política para a ética pessoal e a
+                            arte de viver bem.
+                        </p>
+                        <ul class="philosophers-list">
+                                <a class="philosophers-list__link" href="/philosophers/zenao-de-citio">
+                                    <img class="philosophers-list__image"
+                                        data-src="/assets/images/philosophers/ZenaoCitio.webp" alt="Zenão de Cítio">
+                                    <h3 class="philosophers-list__name">Zenão de Cítio</h3>
+                                    <p class="philosophers-list__description">
+                                        Fundador do estoicismo, defendia que a virtude e a razão são os únicos bens
+                                        verdadeiros,
+                                        ensinando a viver em harmonia com a natureza e aceitar o que está fora do nosso
+                                        controle.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/epicuro">
+                                    <img class="philosophers-list__image"
+                                        data-src="/assets/images/philosophers/Epicuro.webp" alt="Epicuro">
+                                    <h3 class="philosophers-list__name">Epicuro</h3>
+                                    <p class="philosophers-list__description">
+                                        Fundador do epicurismo, defendia o prazer moderado e a ausência de perturbação
+                                        (ataraxia)
+                                        como caminho para uma vida verdadeiramente feliz.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/diogenes-de-sinope">
+                                    <img class="philosophers-list__image"
+                                        data-src="/assets/images/philosophers/Diogenes.webp" alt="Diógenes de Sinope">
+                                    <h3 class="philosophers-list__name">Diógenes de Sinope</h3>
+                                    <p class="philosophers-list__description">
+                                        Principal expoente do cinismo, pregava uma vida simples e livre das convenções
+                                        sociais,
+                                        desafiando os costumes de sua época através de atitudes provocativas.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/pirro-de-elis">
+                                    <img class="philosophers-list__image"
+                                        data-src="/assets/images/philosophers/Pirro.webp" alt="Pirro de Élis">
+                                    <h3 class="philosophers-list__name">Pirro de Élis</h3>
+                                    <p class="philosophers-list__description">
+                                        Fundador do ceticismo, defendia a suspensão do juízo (epoché) diante das
+                                        incertezas do
+                                        conhecimento como caminho para alcançar a tranquilidade da alma.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/epicteto">
+                                    <img class="philosophers-list__image"
+                                        data-src="/assets/images/philosophers/Epicteto.webp" alt="Epicteto">
+                                    <h3 class="philosophers-list__name">Epicteto</h3>
+                                    <p class="philosophers-list__description">
+                                        Filósofo estoico que viveu como escravo antes de ser liberto, ensinava que a
+                                        felicidade
+                                        depende de distinguir o que está sob nosso controle daquilo que não está.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/seneca">
+                                    <img class="philosophers-list__image"
+                                        data-src="/assets/images/philosophers/Seneca.webp" alt="Sêneca">
+                                    <h3 class="philosophers-list__name">Sêneca</h3>
+                                    <p class="philosophers-list__description">
+                                        Filósofo estoico romano e conselheiro de Nero, escreveu extensamente sobre ética
+                                        prática,
+                                        o controle das paixões e a arte de viver com sabedoria e serenidade.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/marco-aurelio">
+                                    <img class="philosophers-list__image"
+                                        data-src="/assets/images/philosophers/MarcoAurelio.webp" alt="Marco Aurélio">
+                                    <h3 class="philosophers-list__name">Marco Aurélio</h3>
+                                    <p class="philosophers-list__description">
+                                        Imperador romano e um dos últimos grandes estoicos, registrou em "Meditações"
+                                        reflexões
+                                        pessoais sobre virtude, aceitação e o exercício da razão diante das
+                                        adversidades.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="philosophers-list__item">
+                                <a class="philosophers-list__link" href="/philosophers/crisipo-de-solis">
+                                    <img class="philosophers-list__image"
+                                        data-src="/assets/images/philosophers/Crisipo.webp" alt="Crísipo de Solis">
+                                    <h3 class="philosophers-list__name">Crísipo de Solis</h3>
+                                    <p class="philosophers-list__description">
+                                        Considerado o segundo fundador do estoicismo, sistematizou e consolidou a
+                                        doutrina da escola
+                                        após Zenão de Cítio, sendo essencial para sua sobrevivência e difusão.
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="philosophers-category" data-philosophers-item>
+                <button class="philosophers-category__header" data-philosophers-trigger aria-expanded="false">
+                    <span class="philosophers-category__heading">
+                        <svg class="philosophers-category__svg" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path
                                 d="M12 3v18M8 6.5c0 2.5-1.5 4-4 4M12 6.5c0 2.5 1.5 4 4 4M12 6.5c0 2.5-1.5 4-4 4M20 10.5c-2.5 0-4-1.5-4-4"
                                 stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
