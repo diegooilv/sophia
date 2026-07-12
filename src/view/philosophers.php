@@ -278,6 +278,7 @@
                             arte de viver bem.
                         </p>
                         <ul class="philosophers-list">
+                            <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/zenao-de-citio">
                                     <img class="philosophers-list__image"
                                         data-src="/assets/images/philosophers/ZenaoCitio.webp" alt="Zenão de Cítio">
