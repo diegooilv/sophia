@@ -5,6 +5,7 @@ class NavigationService
         'guest' => [
             'home' => [
                 'Início' => '/',
+                'Filosofos' => '/philosophers',
                 'Sobre' => '/about',
                 'Entrar' => '/login',
             ],
@@ -24,6 +25,11 @@ class NavigationService
                 'Início' => '/',
                 'Entrar' => '/login',
             ],
+            'philosophers' => [
+                'Início' => '/',
+                'Sobre' => '/about',
+                'Entrar' => '/login',
+            ]
         ],
 
         'user' => [
@@ -55,6 +61,11 @@ class NavigationService
                 'Dashboard' => '/dashboard',
                 'Editar Perfil' => '/profile/edit',
             ],
+            'philosophers' => [
+                'Início' => '/',
+                'Sobre' => '/about',
+                'Entrar' => '/login',
+            ]
         ],
 
         'admin' => [

@@ -7,6 +7,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../config/database.php';
 require_once __DIR__ . '/../config/mail.php';
 require_once __DIR__ . '/../config/Recaptcha.php';
+require_once __DIR__ . '/../config/philosophers.php';
 
 // Core
 require_once __DIR__ . '/../core/Database.php';

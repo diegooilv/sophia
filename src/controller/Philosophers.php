@@ -12,13 +12,13 @@ class Philosophers extends Controller
 
     public function philosophers()
     {
-        $navItems = $this->navigationService->getHeaderItems('home');
+        $navItems = $this->navigationService->getHeaderItems('philosophers');
         $this->view('philosophers', compact('navItems'));
     }
 
     public function philosophersProfile($name)
     {
-        $navItems = $this->navigationService->getHeaderItems('home');
+        $navItems = $this->navigationService->getHeaderItems('philosophers');
         $philosopher = $this->philosophersService->getPhilosopher($name);
         $this->view('philosopher-profile', compact('navItems', 'philosopher'));
     }
