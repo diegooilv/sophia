@@ -444,8 +444,7 @@
                             <li class="philosophers-list__item">
                                 <a class="philosophers-list__link" href="/philosophers/tomas-de-aquino">
                                     <img class="philosophers-list__image"
-                                        data-src="/assets/images/philosophers/Aquino.webp"
-                                        alt="Tomás de Aquino">
+                                        data-src="/assets/images/philosophers/Aquino.webp" alt="Tomás de Aquino">
                                     <h3 class="philosophers-list__name">Tomás de Aquino</h3>
                                     <p class="philosophers-list__description">
                                         Combinou a filosofia aristotélica com a teologia cristã, propondo cinco
@@ -728,8 +727,10 @@
     </main>
 
     <?= renderFooter() ?>
-
+    <?= renderVLibras() ?>
+    <script src="/assets/js/trigger.js" defer></script>
     <script src="/assets/js/philosophers.js" defer></script>
+
 </body>
 
 </html>

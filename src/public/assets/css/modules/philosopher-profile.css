@@ -1,4 +1,5 @@
 .philosophers-profile {
+    position: relative;
     max-width: 900px;
     margin: 0 auto;
     padding: 2.5rem 1.5rem 5rem;

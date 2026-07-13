@@ -11,6 +11,7 @@
 @import url("./modules/user.css");
 @import url("./modules/philosophers.css");
 @import url("./modules/philosopher-profile.css");
+@import url("./modules/philosophers-trigger.css");
 
 @font-face {
     font-family: "Cinzel";
